@@ -3,12 +3,12 @@ pipeline {
   stages {
      stage('clone') {
         steps {
-          git 'https://github.com/Pooja5129/project_jenkins-123'
+          git 'https://github.com/Pooja5129/project_jenkins-123.git'
         }
      }
    stage('Build') {
        steps {
-         sh 'echo "building project ..."
+         sh 'echo "building project ..."'
        } 
    }
    stage('Test') {
